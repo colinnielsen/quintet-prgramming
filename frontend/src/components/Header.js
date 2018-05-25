@@ -23,7 +23,7 @@ class Header extends React.Component {
         <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
         <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
       </header>
-      <Menu compact='true'>
+      <Menu>
           <Menu.Item
             name='Clean'
             active={activeItem === 'Clean'}
