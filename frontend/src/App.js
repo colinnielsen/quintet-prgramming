@@ -38,9 +38,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header displayJokes={this.displayJokes}/>
 
-        <JokeList votes={this.state.votes} jokeCategory={this.state.jokeCategory} displayJokes={this.displayJokes}/>
+        <JokeList votes={this.state.votes} jokeCategory={this.state.jokeCategory} />
         <AddJoke />
 
         <Footer />
