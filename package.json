@@ -1,5 +1,27 @@
 {
   "dependencies": {
     "semantic-ui-react": "^0.80.2"
-  }
+  },
+  "name": "quintet-prgramming",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinnielsen/quintet-prgramming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colinnielsen/quintet-prgramming/issues"
+  },
+  "homepage": "https://github.com/colinnielsen/quintet-prgramming#readme",
+  "description": ""
 }
