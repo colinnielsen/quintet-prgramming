@@ -12,7 +12,7 @@ class JokeList extends React.Component {
   render (props) {
     return(
       <section>
-
+        
       </section>
     )
   }

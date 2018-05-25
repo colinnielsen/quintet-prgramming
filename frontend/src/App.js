@@ -26,14 +26,13 @@ class App extends Component {
   }
 
   displayJokes = (category) => {
-    console.log(category)
+    console.log(category.text)
     this.setState({
       showJokes: true,
-      jokeCategory: category
+      jokeCategory: category.text
     })
+    console.log(this.state.jokeCategory)
   }
-
-
 
   render() {
     return (

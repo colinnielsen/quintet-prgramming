@@ -11,6 +11,12 @@ class Header extends React.Component {
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
+
+  displayJokes = (e) => {
+    this.props.displayJokes(e.target)
+    // console.log(e)
+  }
+
   render() {
     const { activeItem } = this.state
 
@@ -23,12 +29,12 @@ class Header extends React.Component {
         <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
         <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
       </header>
-      <Menu>
+      <Menu compact='true'>
           <Menu.Item
             name='Clean'
             active={activeItem === 'Clean'}
             content='Clean'
-            onClick={this.handleItemClick}
+            onClick={(event) => this.displayJokes(event)}
             style={{width:'200px', textAlign:'center'}}
           />
 
@@ -36,7 +42,7 @@ class Header extends React.Component {
             name='Dirty'
             active={activeItem === 'Dirty'}
             content='Dirty'
-            onClick={this.handleItemClick}
+            onClick={(event) => this.displayJokes(event)}
             style={{width:'200px', textAlign:'center'}}
           />
 
@@ -44,7 +50,7 @@ class Header extends React.Component {
             name='Dad'
             active={activeItem === 'Dad'}
             content='Dad'
-            onClick={this.handleItemClick}
+            onClick={(event) => this.displayJokes(event)}
             style={{width:'200px', textAlign:'center'}}
           />
         </Menu>
