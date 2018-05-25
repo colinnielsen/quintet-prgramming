@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import { Form, Button, Header, Icon, Modal } from 'semantic-ui-react'
 
-const options = [
-  { key: 'm', text: 'Male', value: 'male' },
-  { key: 'f', text: 'Female', value: 'female' },
-]
 
 class FormExampleSubcomponentControl extends Component {
   state = {}
@@ -23,7 +19,7 @@ class FormExampleSubcomponentControl extends Component {
         <Form.Button>Jokes-Away, Motherfucker</Form.Button>
       </Form>
       </Modal>
-      
+
     )
   }
 }

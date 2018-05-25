@@ -13,11 +13,15 @@ class Header extends React.Component {
 
   render() {
     const { activeItem } = this.state
-    
+
     return(
       <div>
       <header className="App-header">
-        <h1>JoKe-oFF!!!</h1>
+        <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
+        <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
+        <img src='../JokeOff.png' style={{height: '150px', width: 'auto'}}/>
+        <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
+        <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
       </header>
       <Menu compact='true'>
           <Menu.Item
