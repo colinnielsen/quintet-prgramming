@@ -16,7 +16,7 @@ class Header extends React.Component {
 
     return(
       <div>
-      <header className="App-header">
+      <header className="App-header" style={{backgroundImage:`url(${'./stripes.png'})`}}>
         <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
         <img src='../stupidlaughingemoji.png' style={{height: '120px', width: 'auto'}}/>
         <img src='../JokeOff.png' style={{height: '150px', width: 'auto'}}/>
