@@ -14,18 +14,30 @@ class App extends Component {
     this.state = {
       data:[],
       JokeCategory:"",
-      ShowJokes:false
+      ShowJokes:false,
+      votes: 0
     }
+  }
+
+  componentDidMount() {
+    fetch('http://jokes-for-days.herokuapp.com/jokes')
+    .then(response => response.json())
+    .then(response => this.populateJokes(response))
+  }
+
+  populateJokes = (data) => {
+    console.log(data)
   }
 
   render() {
     return (
       <div className="App">
         <Header />
-        
-        <JokeList />
-        <Footer />
+
+        <JokeList votes={this.state.votes} jokeCategory={this.state.jokeCategory} showJokes={this.state.showJokes}/>
         <AddJoke />
+
+        <Footer />
       </div>
     )
   }
